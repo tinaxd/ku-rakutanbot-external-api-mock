@@ -1,0 +1,75 @@
+{
+  "count": 1,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "id": 454,
+      "course_code": "LSH9",
+      "course_numbering": "[U-L3]",
+      "name": "自然地理学",
+      "field": "全学：人社",
+      "lecture_set": [
+        {
+          "year": 2020,
+          "group_code": "LH",
+          "code": "2002",
+          "name": "自然地理学",
+          "instructor_set": [
+            {
+              "lecture": "22902",
+              "name": "namename1"
+            }
+          ],
+          "period_set": [
+            {
+              "lecture": "220LA2",
+              "name": "木3"
+            }
+          ],
+          "semester": "後期",
+          "major": "",
+          "url": "",
+          "num_periods": 1,
+          "course_code": "AS9",
+          "course_numbering": "[LAS0L23]"
+        },
+        {
+          "year": 2020,
+          "group_code": "LH",
+          "code": "21",
+          "name": "自然地理学",
+          "instructor_set": [
+            {
+              "lecture": "20901",
+              "name": "namename2"
+            }
+          ],
+          "period_set": [
+            {
+              "lecture": "021",
+              "name": "火2"
+            }
+          ],
+          "semester": "前期",
+          "major": "",
+          "url": "",
+          "num_periods": 1,
+          "course_code": "L",
+          "course_numbering": "[US0J23]"
+        }
+      ],
+      "exam_set": [
+        {
+          "course_code": "L9",
+          "name": "自然地理学",
+          "field": "全学-人社",
+          "drive_id": "aaabb",
+          "drive_link": "aaaa",
+          "drive_link_tag": "<a>aaaa</a>"
+        }
+      ],
+      "exam_count": 1
+    }
+  ]
+}
