@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Header, HTTPException, status
-import os
+import asyncio
 
 from models import get_random_kuwiki
 
@@ -12,7 +12,7 @@ async def root():
     return {"message": "Hello World"}
 
 @app.get(KUWIKI_ENDPOINT)
-def get_kakomon_url(name: str, authorization:str|None= Header(default=None)):
+async def get_kakomon_url(name: str, authorization:str|None= Header(default=None)):
     if authorization is None:
         return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="No authorization header")
 
@@ -20,4 +20,5 @@ def get_kakomon_url(name: str, authorization:str|None= Header(default=None)):
         return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid authorization header")
 
     kuwiki = get_random_kuwiki(name)
+    await asyncio.sleep(0.3)
     return kuwiki
