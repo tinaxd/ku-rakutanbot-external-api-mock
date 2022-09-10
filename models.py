@@ -8,7 +8,7 @@ package main
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.
 
-import "encoding/json"
+import "github.com/goccy/go-json"
 
 func UnmarshalKUWiki(data []byte) (KUWiki, error) {
 	var r KUWiki

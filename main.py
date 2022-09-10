@@ -20,5 +20,5 @@ async def get_kakomon_url(name: str, authorization:str|None= Header(default=None
         return HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid authorization header")
 
     kuwiki = get_random_kuwiki(name)
-    await asyncio.sleep(0.3)
+    await asyncio.sleep(0.08)
     return kuwiki
